@@ -1,1 +1,231 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100vh;
+}
+body {
+  background-color: #3FEEE6;
+  border-radius: 1%;
+  margin: 1%;
+  padding: 2%;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 1.25rem;
+}
+h3,
+h4 {
+  text-align: center;
+  font-size: 2rem;
+}
+.container {
+  border: 25px solid #55BCC9;
+}
+header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+header nav {
+  border: 3px solid #FC4445;
+  background-color: #FC4445;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+header nav a {
+  color: inherit;
+  text-decoration: none;
+  background-color: #FC4445;
+  width: 25%;
+  border: 1px solid black;
+  text-align: center;
+  padding: 1% 3%;
+  margin: 2% 0%;
+}
+a:hover {
+  background-color: #ff5959;
+}
+.topContent .splashImage {
+  width: 40%;
+}
+.topContent .introduction {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px;
+  border: 3px solid #FC4445;
+  background-color: #FC4445;
+}
+.topContent .contentText {
+  padding: 2%;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.4rem;
+  text-align: left;
+}
+.skills .skillContent {
+  display: flex;
+}
+.skills .skillContent .contentText {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.4rem;
+  text-align: left;
+  border: 1px solid black;
+  padding: 2%;
+}
+.previousWork {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.previousWork .workContent {
+  display: flex;
+}
+.previousWork .workContent .contentText {
+  padding: 2%;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.4rem;
+  text-align: left;
+  border: 1px solid black;
+}
