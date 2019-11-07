@@ -151,6 +151,12 @@ h1 {
   font-size: 3rem;
   color: white;
 }
+@media (max-width: 500px) {
+  h1 {
+    text-align: center;
+    padding-bottom: 4%;
+  }
+}
 h2 {
   font-size: 1.25rem;
   color: white;
@@ -160,6 +166,13 @@ h4 {
   text-align: center;
   font-size: 2rem;
   color: white;
+}
+@media (max-width: 500px) {
+  h3 {
+    margin: 8% 0;
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
 }
 h5 {
   text-align: center;
@@ -197,7 +210,12 @@ a:hover {
   background-color: #ff5959;
 }
 .topContent .splashImage {
-  width: 90%;
+  width: 40%;
+}
+@media (max-width: 500px) {
+  .topContent .splashImage {
+    display: none;
+  }
 }
 .topContent .introduction {
   display: flex;
@@ -220,6 +238,11 @@ a:hover {
 .skills .skillContent {
   display: flex;
 }
+@media (max-width: 500px) {
+  .skills .skillContent {
+    flex-direction: column;
+  }
+}
 .skills .skillContent .contentText {
   font-family: 'Lato', sans-serif;
   font-size: 1.4rem;
@@ -228,6 +251,12 @@ a:hover {
   padding: 2%;
   color: white;
 }
+@media (max-width: 500px) {
+  .skills .skillContent .contentText {
+    text-align: center;
+    margin-bottom: 5%;
+  }
+}
 .previousWork {
   margin-top: 2%;
   margin-bottom: 2%;
@@ -235,6 +264,11 @@ a:hover {
 .previousWork .workContent {
   display: flex;
   margin: 2% 2%;
+}
+@media (max-width: 500px) {
+  .previousWork .workContent {
+    flex-direction: column;
+  }
 }
 .previousWork .workContent .contentText {
   padding: 2%;
