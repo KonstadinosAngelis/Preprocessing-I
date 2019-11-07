@@ -149,17 +149,26 @@ body {
 }
 h1 {
   font-size: 3rem;
+  color: white;
 }
 h2 {
   font-size: 1.25rem;
+  color: white;
 }
 h3,
 h4 {
   text-align: center;
   font-size: 2rem;
+  color: white;
+}
+h5 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
 }
 .container {
   border: 25px solid #55BCC9;
+  background-color: #FC4445;
 }
 header {
   display: flex;
@@ -168,8 +177,8 @@ header {
 }
 header nav {
   border: 3px solid #FC4445;
-  background-color: #FC4445;
   width: 100%;
+  margin: 0 2%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -197,13 +206,16 @@ a:hover {
   align-items: center;
   padding: 20px 0px;
   border: 3px solid #FC4445;
-  background-color: #FC4445;
 }
 .topContent .contentText {
   padding: 2%;
   font-family: 'Lato', sans-serif;
   font-size: 1.4rem;
   text-align: left;
+  color: white;
+}
+.skills {
+  margin: 0 2%;
 }
 .skills .skillContent {
   display: flex;
@@ -214,6 +226,7 @@ a:hover {
   text-align: left;
   border: 1px solid black;
   padding: 2%;
+  color: white;
 }
 .previousWork {
   margin-top: 2%;
@@ -221,6 +234,7 @@ a:hover {
 }
 .previousWork .workContent {
   display: flex;
+  margin: 2% 2%;
 }
 .previousWork .workContent .contentText {
   padding: 2%;
@@ -228,4 +242,16 @@ a:hover {
   font-size: 1.4rem;
   text-align: left;
   border: 1px solid black;
+  color: white;
+}
+.contact {
+  text-align: center;
+}
+.contact a {
+  color: inherit;
+  text-decoration: none;
+}
+.contact p {
+  font-size: 1.2rem;
+  color: white;
 }

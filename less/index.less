@@ -51,6 +51,8 @@ table {
 /* Set every element's box-sizing to border-box */
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
+@textColor: white;
+
 .textContents(){
 	padding: 2%;
 	font-family: 'Lato', sans-serif;
@@ -60,7 +62,6 @@ table {
 
 .contentBorders(){
 	border: 3px solid #FC4445;
-	background-color: #FC4445;
 }
 
 .displayFlexer(){
@@ -92,20 +93,30 @@ body{
 
 h1{
 	font-size: 3rem;
+	color: @textColor;
 }
 
 h2{
 	font-size: 1.25rem;
+	color: @textColor;
 }
 
-h3, h4{
+h3, h4,{
 	text-align: center;
-	font-size: 2rem
+	font-size: 2rem;
+	color: @textColor;
+}
+
+h5{
+	text-align: center;
+	font-size: 1.5rem;
+	color: @textColor;
 }
 
 
 .container{
 	border: 25px solid #55BCC9;
+	background-color: #FC4445;
 }
 
 header{
@@ -115,6 +126,8 @@ header{
 	nav{
 		.contentBorders();
 		width: 100%;
+		margin: 0 2%;
+		
 		.displayFlexer();
 		justify-content: space-around;
 
@@ -151,18 +164,21 @@ a:hover {
 
 	.contentText{
 		.textContents();
+		color: @textColor;
 	}
 
 }
 
 .skills{
-
+	margin: 0 2%;
 	.skillContent{
 		display: flex;
+
 		.contentText{
 			.textContents();
 			border: 1px solid black;
 			padding: 2%;
+			color: @textColor;
 		}
 	}
 }
@@ -173,12 +189,28 @@ a:hover {
 
 	.workContent{
 		display: flex;
+		margin: 2% 2%;
 	
 		.contentText{
 			.textContents();
 			border: 1px solid black;
+			color: @textColor;
 		}
 	}
+}
+
+.contact{
+	text-align: center;
+
+	a{
+		.linkReset()
+	}
+
+	p{
+		font-size: 1.2rem;
+		color: @textColor;
+	}
+
 }
 
 
